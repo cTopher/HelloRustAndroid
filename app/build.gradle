@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+//    id 'org.mozilla.rust-android-gradle.rust-android'
 }
 
 android {
@@ -61,3 +62,16 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 }
+
+//cargo {
+//    module  = "../hello"
+//    libname = "hello"
+//    targets = ["x86_64"]
+//    prebuiltToolchains = true
+//}
+//
+//tasks.whenTaskAdded { task ->
+//    if ((task.name == 'javaPreCompileDebug' || task.name == 'javaPreCompileRelease')) {
+//        task.dependsOn 'cargoBuild'
+//    }
+//}
