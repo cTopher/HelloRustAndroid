@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!", fontSize = 70.sp)
+    Text(text = Hello.greet(name), fontSize = 70.sp)
 }
 
 @Preview(showBackground = true)
